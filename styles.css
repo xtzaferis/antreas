@@ -13,7 +13,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: #333;
+    background: #9ae248;
     color: white;
     z-index: 1000;
 }
@@ -22,12 +22,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    height: 60px;
+    padding: 20px;
+    height: 80px;
 }
 
 .logo {
-    font-size: 24px;
+    /* font-size: 24px; */
+    margin-top: 35px;
 }
 
 .nav-links {
@@ -64,18 +65,22 @@ section {
 }
 
 #home {
+    margin-top: 50px;
     background: #f4f4f4;
 }
 
 #about {
+    margin-top: 50px;
     background: #ccc;
 }
 
 #services {
+    margin-top: 50px;
     background: #f4f4f4;
 }
 
 #contact {
+    margin-top: 50px;
     background: #ccc;
 }
 
