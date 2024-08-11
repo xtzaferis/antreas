@@ -7,3 +7,7 @@ burger.addEventListener('click', () => {
 
     burger.classList.toggle('toggle');
 });
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 70);
+});
