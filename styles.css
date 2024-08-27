@@ -63,23 +63,126 @@ header {
     background: #f4f4f4;
 }
 
-#about, #services, #contact, footer  {
+#about, #services, footer  {
     background: #f4f4f4;
 }
 
-section, footer {
+section {
     margin-top: 10px;
     margin: 10px 350px 0 350px;
     padding: 40px 25px;
-    height: 100vh;
     border: 2px solid rgb(231, 229, 229);
-    border-radius: 25px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 footer {
-    height: 300px;
+    background: #f4f4f4;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: 2px solid rgb(231, 229, 229);
+    padding: 40px 0;
+    margin: 10px 350px 0 350px;
+    margin-bottom: 15px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-column p {
+    line-height: 1.6;
+    margin-right: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #2b2727;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #2a9e3a;
+}
+
+.social-icons a, .top-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #007BFF;
+}
+
+.top-icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icon {
+    margin-top: 5px;
+    width: 30px;
+}
+
+.top-icon:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
 
 @media (max-width: 1270px) {
