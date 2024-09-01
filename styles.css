@@ -30,6 +30,29 @@ header {
     margin-top: 30px;
 }
 
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pictures {
+    width: 200px;
+    height: 200px;
+    border: 8px solid;
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    background-size: cover;
+}
+  
+.first {
+    background-image: url('images/kombi1.jpg');
+}
+
+.certificate-picture {
+    max-width: 100%;
+    height: auto;
+}
+  
 .nav-links {
     list-style: none;
     display: flex;
@@ -58,12 +81,12 @@ header {
     transition: all 0.3s ease;
 }
 
-#home {
+#services {
     margin-top: 70px;
     background: #f4f4f4;
 }
 
-#about, #services, footer  {
+#jobs, #services, #about, footer  {
     background: #f4f4f4;
 }
 
@@ -113,7 +136,7 @@ footer {
 
 .footer-column p {
     line-height: 1.6;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .footer-column ul {
@@ -153,6 +176,12 @@ footer {
     background-color: #007BFF;
 }
 
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .top-icon-container {
     display: flex;
     justify-content: space-between;
@@ -184,6 +213,40 @@ footer {
     right: 20px;
     display: none;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 @media (max-width: 1270px) {
     .nav-links {
